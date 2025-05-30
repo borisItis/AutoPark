@@ -1,0 +1,292 @@
+:root {
+  --dark: #1c1c1c;
+  --accent: #f13939;
+  --light: #b5b0ca;
+  --white: #ffffff;
+
+  --tr: 0.2s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  color: black;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 80px;
+}
+
+.header {
+  padding: 25px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+  gap: 60px;
+  align-items: end;
+}
+
+.header__nav a {
+  width: 73px;
+  height: 16px;
+  font-size: 15px;
+}
+
+.header__nav a:hover {
+  opacity: 1;
+  color: var(--accent);
+  transition: 0.4s;
+}
+
+.welcome {
+  height: 100vh;
+  padding: 105px 154px;
+  background-image: url(./image/background.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.welcome__title {
+  font-weight: 700;
+  font-size: 80px;
+  width: 855px;
+}
+
+.welcome__desc {
+  margin: 40px 0;
+  font-weight: 400;
+  font-size: 16px;
+  width: 500px;
+}
+
+.btn {
+  background: #000;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff2e2e;
+  box-shadow: 0 0 15px #ff2e2e, 0 0 25px #ff2e2e;
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+
+.autocard {
+  padding-top: 100px;
+}
+
+.autocard h2 {
+  font-weight: 700px;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: start;
+  margin-bottom: 110px;
+}
+
+.autocard-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.autocard-item {
+  text-align: center;
+  padding: 35px 29px;
+}
+
+.autocard-item__info {
+  display: flex;
+  gap: 16px;
+  padding: 0 30px;
+}
+
+.autocard-item__info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.autocard-item__info-image {
+  width: 40px;
+}
+
+.autocard-item h3 {
+  font-weight: 700px;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 2%;
+  margin-bottom: -5px;
+}
+
+.autocard-item__reiting img {
+  padding-top: 30px;
+  margin-right: 50px;
+}
+
+.autocard-item p {
+  font-size: 16px;
+  line-height: 130%;
+  padding: 11px;
+}
+
+.autocard-item__last {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 0 120px;
+  width: 384px;
+  height: 54px;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  background: #030305;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin: 0 auto;
+}
+
+.autocard-item a {
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Booking Section */
+
+.booking-section {
+  display: flex;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.booking-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.booking-description {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: #555;
+}
+
+.booking-form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  display: inline-block;
+  background-color: #e53935;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #c62828;
+}
+
+/* Футер */
+footer {
+  background-color: #fff;
+  color: #000;
+  padding: 30px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-img {
+  padding: 20px 0;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.divider {
+  height: 1px;
+  background-color: #ddd;
+  margin: 40px auto;
+  max-width: 100%;
+}
